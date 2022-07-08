@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@1,400;1,700&family=Playfair+Display:ital@1&family=The+Nautigal&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+   scroll-behavior: smooth;
+}
+/*navbar*/
+#bar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top:0;
+}
+#bar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+opacity:0.5;
+ }
+/*logo*/
+#logo{
+margin: 1px;
+}
+ /*image*/
+ #logo img{
+    clip-path: circle(40% at 50% 50%);
+    margin: 2px ;
+ }
+ #bar ul li{
+     font: size 1.3em; 
+list-style: none;
+ }
+ #bar ul li a{
+   display: block;
+   color:antiquewhite;
+padding: 15px ;
+text-decoration: none;
+border-radius: 15px;
+font-family: 'Gentium Book Plus', serif;
+font-weight: bolder;
+font-size: larger;
+cursor: pointer;
+}
+#bar ul li a:hover{
+    color:black;
+    background-color:blanchedalmond;
+}
+ #bar ul{
+    display: flex;
+ }
+ #home{
+    display: flex;
+    flex-direction: column;
+    padding:3px;
+    justify-content: center;
+    align-items: center;
+    height: 480px;
+
+ }
+ /*fsuedo selectors*/
+ #home::before{
+    content: "";
+    background :url("background.jpeg") no-repeat center center/cover;
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 80%;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.89;
+ }
+ .h_primary{
+    font-size: 3rem ;
+    padding: 12px;
+    color:rgb(52, 6, 6);
+    font-family: 'Playfair Display', serif;
+ }
+ .h_secondary{
+    font-size: 2rem ;
+    padding: 12px;
+    font-family: 'Playfair Display', serif;
+    color:rgb(52, 6, 6);
+ }
+ #home h1{
+    color :bisque;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+ }
+ #home p{
+    color :bisque;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Gentium Book Plus', serif;
+ }
+ #home .btn{
+padding:3px 20px ;
+color: antiquewhite;
+background-color: rgb(52, 6, 6);
+border: 3px solid antiquewhite;
+margin: 20px;
+font-size: 1.5rem;
+border-radius: 10px;
+cursor: pointer;
+ }
+ #home .btn:hover{
+    background-color: black;
+    color:brown;
+    border: 3px solid black;
+ }
+ .center{
+    text-align: center;
+ }
+ #services{
+    margin: 30px;
+    display: flex;
+ }
+ #services .box {
+    border: 3px solid rgb(52, 6, 6);;
+    border-radius: 40px;
+    padding: 20px;
+    margin: 3px;
+    background-color:rgb(250, 234, 209) ;
+ }
+ #services .box p{
+    font-family: 'Gentium Book Plus', serif;
+ }
+ #services .box img {
+    width: 140px;
+    height: 130px;
+    margin :auto;
+    display:block;
+ }
+ footer{
+   background-color: black;
+   color:white;
+   padding: 10px;
+   font-family: 'Gentium Book Plus', serif;
+   font-weight: bolder;
+   bottom: 0;
+ }
+ #contact
+ {
+   height:300px;
+   position: relative;
+ }
+ .contact_box img{
+   height: 60px;
+ }
+ .contacts{
+   padding: 20px;
+ }
+ #contact::before{
+   content:"";
+   position :absolute;
+   background: url("background2.webp") no-repeat center center/cover;
+   height: 100%;
+   width: 100%;
+   z-index:-1;
+   opacity: 0.6;
+
+
+ }
+ #contact .contact_box{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   padding:5px ;
+ }
